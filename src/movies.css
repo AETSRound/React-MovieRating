@@ -1,0 +1,9 @@
+.movie__title{
+    background:tomato;
+}
+.movie__year{
+    font-size: 50%;
+}
+.movie__summary{
+    background:cyan;
+}
