@@ -6,8 +6,8 @@ import "./Navigation.css"
 export default function Navigation() {
     return (
         <div className="nav">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
+            <Link to="/" className="btn--stripe">Home</Link>
+            <Link to="/about" className="btn--stripe">About</Link>
         </div>
     )
 }

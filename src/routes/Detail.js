@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import "./Detail.css"
 
 export default class Detail extends Component {
     componentDidMount(){
@@ -10,10 +11,27 @@ export default class Detail extends Component {
     }
     render() {
         const {location} = this.props;
+        let cover = location.state.poster;
+        cover = cover.replace("medium", "large");
         if(location.state){
             return (
                 <div>
-                    {location.state.title}
+                    <div className="moive_container">
+                        <div className="img_container">
+                            <img className="movie_image" src={cover}></img>
+                        </div>
+                        <div className="movie_head">
+                            <span className="movie_title">
+                                {location.state.title}
+                            </span>
+                            <span className="movie_year">
+                                ({location.state.year})
+                            </span>
+                        </div>
+                        <div className="movie_summary">
+                            {location.state.summary}
+                        </div>
+                    </div>
                 </div>
             )
         }else{

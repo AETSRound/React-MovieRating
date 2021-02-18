@@ -28,8 +28,16 @@
     font-size: 12px;
     text-align: center;
     font-weight: 600;
+
   }
   
   .nav a:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  .btn--stripe:hover{
+    color: coral;
+  }
+  .btn--stripe:active{
+    background-color: #eee;
   }
