@@ -13,6 +13,7 @@
   
   .about__container span:first-child {
     font-size: 20px;
+    font-weight: 700;
   }
   
   .about__container span:last-child {
