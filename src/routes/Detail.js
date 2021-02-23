@@ -11,14 +11,12 @@ export default class Detail extends Component {
     }
     render() {
         const {location} = this.props;
-        let cover = location.state.poster;
-        cover = cover.replace("medium", "large");
         if(location.state){
             return (
                 <div>
                     <div className="moive_container">
                         <div className="img_container">
-                            <img className="movie_image" src={cover}></img>
+                            <img className="movie_image" src={location.state.poster}></img>
                         </div>
                         <div className="movie_head">
                             <span className="movie_title">

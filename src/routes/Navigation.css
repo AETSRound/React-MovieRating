@@ -15,7 +15,7 @@
   @media screen and (max-width: 1090px) {
     .nav {
       left: initial;
-      top: initial;
+      top:initial; 
       bottom: 0px;
       width: 100%;
     }
@@ -28,7 +28,6 @@
     font-size: 12px;
     text-align: center;
     font-weight: 600;
-
   }
   
   .nav a:not(:last-child) {
